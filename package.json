@@ -36,7 +36,7 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "^4.0.3",
     "react-typist": "^2.0.5",
-    "reactstrap": "^8.9.0",
+    "reactstrap": "^9.1.6",
     "sharp": "^0.30.5"
   },
   "devDependencies": {
