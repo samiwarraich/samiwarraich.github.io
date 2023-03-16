@@ -186,13 +186,13 @@ export const projects = [
   },
 ];
 
-// export const feedbacks = [
-//   {
-//     name: "Amad",
-//     feedback:
-//       "I was trying to make a website that is blazingly fast. I had no idea where to start. What did I do? Called my friend Sami. I had no Idea what i Was doing! He fixed it. Website? Fast. Blazingly. Done.",
-//   },
-// ];
+export const feedbacks = [
+  {
+    name: "Amad",
+    feedback:
+      "I was trying to make a website that is blazingly fast. I had no idea where to start. What did I do? Called my friend Sami. I had no Idea what i Was doing! He fixed it. Website? Fast. Blazingly. Done.",
+  },
+];
 
 export const seoData = {
   title: "Sami's Portfolio",
