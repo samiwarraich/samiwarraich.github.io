@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import { seoData } from "../portfolio";
 
 function SEO() {
-  console.log("==============", seoData, "=============");
   return (
     <Head>
       <title>{seoData.title}</title>
