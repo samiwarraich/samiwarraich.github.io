@@ -56,20 +56,20 @@ export const skillsSection = {
           fontAwesomeClassname: "logos:express",
         },
         {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "logos:mongodb-icon",
+          skillName: "NextJS",
+          fontAwesomeClassname: "logos:nextjs-icon",
         },
         {
           skillName: "Expo",
           fontAwesomeClassname: "logos:expo-icon",
         },
         {
-          skillName: "firebase",
-          fontAwesomeClassname: "logos:firebase",
+          skillName: "MongoDB",
+          fontAwesomeClassname: "logos:mongodb-icon",
         },
         {
-          skillName: "NextJS",
-          fontAwesomeClassname: "logos:nextjs-icon",
+          skillName: "firebase",
+          fontAwesomeClassname: "logos:firebase",
         },
         {
           skillName: "Redux",
@@ -168,15 +168,15 @@ export const projects = [
     web: "https://linesheets.com/",
   },
   {
+    name: "New York Adventure Club",
+    desc: "NYAC is a tour company, which gives you insider access to the citys best-kept secrets.",
+    web: "https://nyadventureclub.com/",
+  },
+  {
     name: "bookit",
     desc: "bookit is an online booking system that allows guests to make secure online reservations and helps hotels to accept bookings and collect payments online.",
     github: "https://github.com/samiwarraich/bookit",
     web: "https://bookit-sw.vercel.app",
-  },
-  {
-    name: "New York Adventure Club",
-    desc: "NYAC is a tour company, which gives you insider access to the citys best-kept secrets.",
-    web: "https://nyadventureclub.com/",
   },
   {
     name: "Phanox",
@@ -202,14 +202,10 @@ export const seoData = {
     "https://avatars.githubusercontent.com/u/55091638?s=400&u=c67569833bfa4617eaa179e4d3512cb0800d2a88&v=4",
   url: "https://samiwarraich.github.io/",
   keywords: [
+    "Sami",
+    "Warraich",
     "Sami Warraich",
     "samiwarraich",
-    "samiwarraich0",
-    "samiwarraich2",
-    "sami-warraich",
-    "@samiwarraich0",
-    "@samiwarraich2",
-    "@sami-warraich",
     "Software Engineer",
     "Portfolio",
     "Full Stack Developer",
@@ -229,8 +225,6 @@ export const seoData = {
     "Gujrat",
     "linesheets",
     "New York Adventure Club",
-    "bookit",
-    "Phanox",
     "facebook",
     "instagram",
     "twitter",
