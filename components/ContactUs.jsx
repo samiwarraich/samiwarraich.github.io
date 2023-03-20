@@ -23,6 +23,8 @@ export const ContactUs = () => {
   const userEmailRef = useRef();
   const userMessageRef = useRef();
   const [alert, setAlert] = React.useState(null);
+  const emailRegex =
+    /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
   const successAlert = {
     color: "success",
@@ -42,6 +44,12 @@ export const ContactUs = () => {
     message: "All fields are required.",
   };
 
+  const inValidEmailAlert = {
+    color: "danger",
+    icon: "ni ni-bell-55",
+    message: "Enter a valid email.",
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
     if (
@@ -50,6 +58,9 @@ export const ContactUs = () => {
       !userMessageRef.current.value
     ) {
       setAlert(requiredAlert);
+      setTimeout(() => setAlert(null), 5000);
+    } else if (!emailRegex.test(userEmailRef.current.value)) {
+      setAlert(inValidEmailAlert);
       setTimeout(() => setAlert(null), 5000);
     } else {
       emailjs
