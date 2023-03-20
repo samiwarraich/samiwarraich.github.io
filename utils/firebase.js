@@ -11,7 +11,6 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-// Initialize Firebase
 let app;
 let analytics;
 if (typeof window != undefined) {
@@ -19,4 +18,4 @@ if (typeof window != undefined) {
   analytics = isSupported().then((yes) => (yes ? getAnalytics(app) : null));
 }
 
-export { app, analytics };
+export { analytics };

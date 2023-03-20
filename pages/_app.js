@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { analytics } from "../utils/firebase";
-import { Analytics } from "@vercel/analytics/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/argon-design-system-react.css";
 import "../styles/styles.css";
@@ -14,7 +13,6 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
-      <Analytics />
     </>
   );
 }

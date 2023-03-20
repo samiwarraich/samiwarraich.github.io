@@ -7,12 +7,17 @@ import { seoData } from "../portfolio";
 function SEO() {
   return (
     <Head>
-      <title>{seoData.title}</title>
+      <title lang="en-US">{seoData.title}</title>
       <meta name="title" content={seoData.title} />
       <meta name="author" content={seoData.author} />
       <meta name="description" content={seoData.description} />
       <meta name="keywords" content={seoData.keywords.join(", ")} />
       <link rel="canonical" href={seoData.url} />
+      <meta
+        name="google-site-verification"
+        content="ELB_vUPdHzKluiiPGhpV3ORRmCo1ogHoTYwRMp6Bm54"
+      />
+      <meta name="msvalidate.01" content="DD992E9CC85A0E458EA3599D0526C78A" />
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content={seoData.url} />
