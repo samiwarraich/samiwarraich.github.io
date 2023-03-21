@@ -1,3 +1,4 @@
 User-agent: *
-Allow: /*
-Host: samiwarraich.github.io
+Allow: /
+Host: https://samiwarraich.github.io/
+Sitemap: https://samiwarraich.github.io/sitemap.xml
