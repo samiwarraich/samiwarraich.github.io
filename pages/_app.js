@@ -1,5 +1,3 @@
-// import { useEffect } from "react";
-// import { analytics } from "../utils/firebase";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,9 +8,6 @@ import "../styles/vendor/nucleo/css/nucleo.css";
 
 function MyApp({ Component, pageProps }) {
   const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
-  // useEffect(() => {
-  //   analytics;
-  // }, []);
   return (
     <>
       <Script
