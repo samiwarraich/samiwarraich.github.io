@@ -17,6 +17,7 @@ function SEO() {
         name="google-site-verification"
         content="ELB_vUPdHzKluiiPGhpV3ORRmCo1ogHoTYwRMp6Bm54"
       />
+      <meta name="msvalidate.01" content="DD992E9CC85A0E458EA3599D0526C78A" />
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content={seoData.url} />
