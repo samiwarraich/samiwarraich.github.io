@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-// import { getAnalytics, isSupported } from "firebase/analytics";
+import { getAnalytics, isSupported } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -11,11 +11,10 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-let app;
+let app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
 let analytics;
 if (typeof window != undefined) {
-  app = initializeApp(firebaseConfig);
-  // analytics = isSupported().then((yes) => (yes ? getAnalytics(app) : null));
+  analytics = isSupported().then((yes) => (yes ? getAnalytics(app) : null));
 }
 
-export { app, analytics };
+export { analytics };
