@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import { seoData } from "../portfolio";
 
 function SEO() {
+  const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
   return (
     <Head>
       <title>{seoData.title}</title>
@@ -36,6 +37,19 @@ function SEO() {
       <link rel="apple-touch-icon" sizes="120x120" href="./favicon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+      <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', ${GA_TRACKING_ID});
+        `}
+      </script>
     </Head>
   );
 }
