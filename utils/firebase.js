@@ -1,4 +1,4 @@
-import { initializeApp, getApps } from "firebase/app";
+import { initializeApp } from "firebase/app";
 import { getAnalytics, isSupported } from "firebase/analytics";
 
 const firebaseConfig = {
@@ -11,9 +11,10 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-let app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
+let app;
 let analytics;
 if (typeof window != undefined) {
+  app = initializeApp(firebaseConfig);
   analytics = isSupported().then((yes) => (yes ? getAnalytics(app) : null));
 }
 
