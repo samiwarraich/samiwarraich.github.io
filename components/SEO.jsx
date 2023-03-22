@@ -5,7 +5,8 @@ import PropTypes from "prop-types";
 import { seoData } from "../portfolio";
 
 function SEO() {
-  const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
+  // const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
+  const GTM_TRACKING_ID = process.env.NEXT_PUBLIC_GTM_TRACKING_ID;
   return (
     <Head>
       <title>{seoData.title}</title>
@@ -37,7 +38,7 @@ function SEO() {
       <link rel="apple-touch-icon" sizes="120x120" href="./favicon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
-      <script
+      {/* <script
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
       />
@@ -49,7 +50,12 @@ function SEO() {
 
           gtag('config', '${GA_TRACKING_ID}');
         `}
-      </script>
+      </script> */}
+      <script>{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','${GTM_TRACKING_ID}');`}</script>
     </Head>
   );
 }
