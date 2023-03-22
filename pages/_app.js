@@ -1,5 +1,6 @@
-import { useEffect } from "react";
-import { analytics } from "../utils/firebase";
+// import { useEffect } from "react";
+// import { analytics } from "../utils/firebase";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/argon-design-system-react.css";
@@ -8,11 +9,26 @@ import "../styles/vendor/font-awesome/css/font-awesome.min.css";
 import "../styles/vendor/nucleo/css/nucleo.css";
 
 function MyApp({ Component, pageProps }) {
-  useEffect(() => {
-    analytics;
-  }, []);
+  const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
+  // useEffect(() => {
+  //   analytics;
+  // }, []);
   return (
     <>
+      <Script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', ${GA_TRACKING_ID});
+        `}
+      </Script>
       <Component {...pageProps} />
       <Analytics />
     </>
