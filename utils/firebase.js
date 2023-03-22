@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics, isSupported } from "firebase/analytics";
+// import { getAnalytics, isSupported } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -15,7 +15,7 @@ let app;
 let analytics;
 if (typeof window != undefined) {
   app = initializeApp(firebaseConfig);
-  analytics = isSupported().then((yes) => (yes ? getAnalytics(app) : null));
+  // analytics = isSupported().then((yes) => (yes ? getAnalytics(app) : null));
 }
 
-export { analytics };
+export { app, analytics };
