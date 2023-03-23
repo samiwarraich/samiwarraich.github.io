@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import { seoData } from "../portfolio";
 
 function SEO() {
+  const MS_CLARITY = process.env.NEXT_PUBLIC_MS_CLARITY;
   return (
     <Head>
       <title lang="en-US">{seoData.title}</title>
@@ -37,6 +38,14 @@ function SEO() {
       <link rel="apple-touch-icon" sizes="120x120" href="./favicon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
+      {/* <!-- Clarity tracking code for https://samiwarraich.github.io/ --> */}
+      <script>
+        {`(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "${MS_CLARITY}");`}
+      </script>
     </Head>
   );
 }
