@@ -13,7 +13,7 @@ function SEO() {
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {/* Search Engines */}
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="all" />
       <meta
         name="google-site-verification"
         content="ELB_vUPdHzKluiiPGhpV3ORRmCo1ogHoTYwRMp6Bm54"
