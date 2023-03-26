@@ -198,7 +198,8 @@ export const feedbacks = [
 export const seoData = {
   title: "Sami's Portfolio",
   author: "Sami Warraich",
-  description: "Full Stack Developer showcasing my work and experience.",
+  description:
+    "I'm a passionate Full stack developer having experience in developing Full stack Web applications with React.js, Next.js, Node.js, Express.js, and Mobile application development on React Native.",
   image:
     "https://avatars.githubusercontent.com/u/55091638?s=400&u=c67569833bfa4617eaa179e4d3512cb0800d2a88&v=4",
   url: "https://samiwarraich.github.io/",
@@ -212,10 +213,10 @@ export const seoData = {
     "my portfolio",
     "developer",
     "full stack developer",
-    "Open to work",
+    "open to work",
     "web developer",
-    "Gigalabs",
-    "Dabeeb",
+    "gigalabs",
+    "dabeeb",
     "next.js",
     "react",
     "expo",
