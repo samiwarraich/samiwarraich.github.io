@@ -159,30 +159,74 @@ export const projects = [
   {
     name: "Dabeeb",
     desc: "Dabeeb is a Saudi company specializing in renting scooters and bicycles for transportation in the Kingdom of Saudi Arabia.",
-    android: "https://play.google.com/store/apps/details?id=com.dabeeb.scooter",
-    ios: "https://apps.apple.com/ee/app/dabeeb/id1499308212",
+    links: [
+      {
+        icon: "bxl:play-store",
+        url: "https://play.google.com/store/apps/details?id=com.dabeeb.scooter",
+      },
+      {
+        icon: "basil:app-store-solid",
+        url: "https://apps.apple.com/ee/app/dabeeb/id1499308212",
+      },
+    ],
   },
   {
     name: "linesheets",
     desc: "Linesheets is an online platform allowing its users to customize and share their product collections.",
-    web: "https://linesheets.com/",
+    links: [
+      {
+        icon: "mdi:internet",
+        url: "https://linesheets.com/",
+      },
+    ],
   },
   {
     name: "New York Adventure Club",
     desc: "NYAC is a tour company, which gives you insider access to the citys best-kept secrets.",
-    web: "https://nyadventureclub.com/",
+    links: [
+      {
+        icon: "mdi:internet",
+        url: "https://nyadventureclub.com/",
+      },
+    ],
   },
   {
     name: "bookit",
     desc: "bookit is an online booking system that allows guests to make secure online reservations and helps hotels to accept bookings and collect payments online.",
-    github: "https://github.com/samiwarraich/bookit",
-    web: "https://bookit-sw.vercel.app",
+    links: [
+      {
+        icon: "mdi:internet",
+        url: "https://bookit-sw.vercel.app",
+      },
+      {
+        icon: "mdi:github",
+        url: "https://github.com/samiwarraich/bookit",
+      },
+    ],
   },
   {
     name: "Phanox",
     desc: "Phanox is an e-commerce website built with Next.js, Sanity. Now your reach to all your favorite headphones is just one touch apart.",
-    web: "https://phanox-sw.vercel.app",
-    github: "https://github.com/samiwarraich/phanox",
+    links: [
+      {
+        icon: "mdi:internet",
+        url: "https://phanox-sw.vercel.app",
+      },
+      {
+        icon: "mdi:github",
+        url: "https://github.com/samiwarraich/phanox",
+      },
+    ],
+  },
+  {
+    name: "Color Gradient Bot",
+    desc: "A Telegram bot that sends random gradient images with every message. Add some color to your chats.",
+    links: [
+      {
+        icon: "ic:baseline-telegram",
+        url: "https://t.me/colorGradientBot",
+      },
+    ],
   },
 ];
 
@@ -228,10 +272,6 @@ export const seoData = {
     "Gujrat",
     "linesheets",
     "New York Adventure Club",
-    "facebook",
-    "instagram",
-    "twitter",
-    "github",
-    "linkedin",
+    "color gradient bot",
   ],
 };

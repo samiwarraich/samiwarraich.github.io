@@ -14,58 +14,19 @@ const ProjectsCard = ({ data }) => {
               <div className="pl-4">
                 <h3>{data.name}</h3>
                 <p className="description mt-3">{data.desc}</p>
-                {data.github ? (
+                {data?.links?.map((link, i) => (
                   <Button
+                    key={i}
                     className="btn-icon"
-                    href={data.github}
+                    href={link.url}
                     target="_blank"
                     rel="noopener"
-                    aria-label="Github"
                   >
                     <span className="btn-inner--icon">
-                      <Icon icon="mdi:github" fontSize={20}></Icon>
+                      <Icon icon={link.icon} fontSize={20}></Icon>
                     </span>
                   </Button>
-                ) : null}
-                {data.web ? (
-                  <Button
-                    className="btn-icon"
-                    href={data.web}
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Web"
-                  >
-                    <span className="btn-inner--icon">
-                      <Icon icon="mdi:internet" fontSize={20}></Icon>
-                    </span>
-                  </Button>
-                ) : null}
-                {data.android ? (
-                  <Button
-                    className="btn-icon"
-                    href={data.android}
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Android"
-                  >
-                    <span className="btn-inner--icon">
-                      <Icon icon="bxl:play-store" fontSize={20}></Icon>
-                    </span>
-                  </Button>
-                ) : null}
-                {data.ios ? (
-                  <Button
-                    className="btn-icon"
-                    href={data.ios}
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="IOS"
-                  >
-                    <span className="btn-inner--icon">
-                      <Icon icon="basil:app-store-solid" fontSize={20}></Icon>
-                    </span>
-                  </Button>
-                ) : null}
+                ))}
               </div>
             </div>
           </CardBody>
