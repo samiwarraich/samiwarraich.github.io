@@ -9,7 +9,6 @@ import {
   CardBody,
   FormGroup,
   Input,
-  InputGroupAddon,
   InputGroupText,
   InputGroup,
   Container,
@@ -118,11 +117,9 @@ export const ContactUs = () => {
                     </p>
                     <FormGroup className={classnames("mt-5", {})}>
                       <InputGroup className="input-group-alternative">
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="ni ni-user-run" />
-                          </InputGroupText>
-                        </InputGroupAddon>
+                        <InputGroupText>
+                          <i className="ni ni-user-run" />
+                        </InputGroupText>
                         <Input
                           innerRef={userNameRef}
                           placeholder="Your name"
@@ -133,11 +130,9 @@ export const ContactUs = () => {
                     </FormGroup>
                     <FormGroup className={classnames({})}>
                       <InputGroup className="input-group-alternative">
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="ni ni-email-83" />
-                          </InputGroupText>
-                        </InputGroupAddon>
+                        <InputGroupText>
+                          <i className="ni ni-email-83" />
+                        </InputGroupText>
                         <Input
                           innerRef={userEmailRef}
                           placeholder="Email address"
