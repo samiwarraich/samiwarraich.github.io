@@ -18,6 +18,7 @@ function SEO() {
         content="ELB_vUPdHzKluiiPGhpV3ORRmCo1ogHoTYwRMp6Bm54"
       />
       <meta name="msvalidate.01" content="DD992E9CC85A0E458EA3599D0526C78A" />
+      <meta name="msnbot" content="preview"></meta>
       <link rel="manifest" href="/manifest.json" />
       <link rel="canonical" href={seoData.url} />
 
