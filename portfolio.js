@@ -2,7 +2,7 @@ import emoji from "react-easy-emoji";
 
 export const greetings = {
   name: "Sami Warraich",
-  title: "Hi, I'm Sami",
+  title: "Hi, I'm Sami Warraich",
   description:
     "I'm a passionate Full stack developer having experience in developing Full stack Web applications with React.js, Next.js, Node.js, Express.js, and Mobile application development on React Native.",
   resumeLink: "https://samiwarraich.github.io/resume/",
@@ -240,7 +240,7 @@ export const feedbacks = [
 ];
 
 export const seoData = {
-  title: "Sami's Portfolio",
+  title: "Sami Warraich",
   author: "Sami Warraich",
   description:
     "Software Engineer | Javascript | ReactJS | React Native | NodeJS",
