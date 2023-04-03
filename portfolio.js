@@ -243,8 +243,7 @@ export const seoData = {
   title: "Sami Warraich",
   author: "Sami Warraich",
   description:
-    "Software Engineer | Javascript | ReactJS | React Native | NodeJS",
-  // "I'm a passionate Full stack developer having experience in developing Full stack Web applications with React.js, Next.js, Node.js, Express.js, and Mobile application development on React Native.",
+    "I'm a passionate Full stack developer having experience in developing Full stack Web applications with React.js, Next.js, Node.js, Express.js, and Mobile application development on React Native.",
   image:
     "https://avatars.githubusercontent.com/u/55091638?s=400&u=c67569833bfa4617eaa179e4d3512cb0800d2a88&v=4",
   url: "https://samiwarraich.github.io/",
