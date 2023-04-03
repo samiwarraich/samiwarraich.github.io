@@ -5,7 +5,7 @@ export const greetings = {
   title: "Hi, I'm Sami Warraich",
   description:
     "I'm a passionate Full stack developer having experience in developing Full stack Web applications with React.js, Next.js, Node.js, Express.js, and Mobile application development on React Native.",
-  resumeLink: "https://samiwarraich.github.io/resume/",
+  resumeLink: "https://samiwarraich.github.io/resume",
 };
 
 export const openSource = {
@@ -16,10 +16,10 @@ export const contact = {};
 
 export const socialLinks = {
   // facebook: "https://www.facebook.com/samiwarraich0",
-  // instagram: "https://www.instagram.com/samiwarraich0/",
+  // instagram: "https://www.instagram.com/samiwarraich0",
   twitter: "https://twitter.com/samiwarraich2",
   github: "https://github.com/samiwarraich",
-  linkedin: "https://www.linkedin.com/in/sami-warraich/",
+  linkedin: "https://www.linkedin.com/in/sami-warraich",
 };
 
 export const skillsSection = {
@@ -176,7 +176,7 @@ export const projects = [
     links: [
       {
         icon: "mdi:internet",
-        url: "https://linesheets.com/",
+        url: "https://linesheets.com",
       },
     ],
   },
@@ -186,7 +186,7 @@ export const projects = [
     links: [
       {
         icon: "mdi:internet",
-        url: "https://nyadventureclub.com/",
+        url: "https://nyadventureclub.com",
       },
     ],
   },
@@ -246,7 +246,7 @@ export const seoData = {
     "I'm a passionate Full stack developer having experience in developing Full stack Web applications with React.js, Next.js, Node.js, Express.js, and Mobile application development on React Native.",
   image:
     "https://avatars.githubusercontent.com/u/55091638?s=400&u=c67569833bfa4617eaa179e4d3512cb0800d2a88&v=4",
-  url: "https://samiwarraich.github.io/",
+  url: "https://samiwarraich.github.io",
   keywords: [
     "Sami",
     "Warraich",
