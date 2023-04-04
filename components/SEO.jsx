@@ -13,7 +13,7 @@ function SEO() {
     url,
     keywords,
   } = seoData;
-  const description = splitStringAtClosestSpace(descriptionStr, 140)[0];
+  const description = splitStringAtClosestSpace(descriptionStr, 155)[0];
   return (
     <Head>
       {/* Settings */}
