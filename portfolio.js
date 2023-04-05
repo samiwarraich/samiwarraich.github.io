@@ -16,7 +16,7 @@ export const contact = {};
 
 export const socialLinks = {
   // facebook: "https://www.facebook.com/samiwarraich0",
-  // instagram: "https://www.instagram.com/samiwarraich0",
+  instagram: "https://www.instagram.com/samiwarraich0",
   twitter: "https://twitter.com/samiwarraich2",
   github: "https://github.com/samiwarraich",
   linkedin: "https://www.linkedin.com/in/sami-warraich",
