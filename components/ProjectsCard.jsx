@@ -1,8 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import { Card, CardBody, Col, Button } from "reactstrap";
-
-import { Fade } from "react-reveal";
+import Fade from "react-reveal/Fade";
 
 const ProjectsCard = ({ data }) => {
   return (

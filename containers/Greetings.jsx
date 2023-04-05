@@ -1,15 +1,13 @@
 import React, { useEffect } from "react";
+import { Button, Container, Row, Col } from "reactstrap";
+import GreetingLottie from "../components/DisplayLottie";
+import SocialLinks from "../components/SocialLinks";
 import { greetings } from "../portfolio";
 import dynamic from "next/dynamic";
 
 const ParticleBg = dynamic(() => import("particles-bg"), {
   ssr: false,
 });
-
-import { Button, Container, Row, Col } from "reactstrap";
-
-import GreetingLottie from "../components/DisplayLottie";
-import SocialLinks from "../components/SocialLinks";
 
 const Greetings = () => {
   useEffect(() => {
