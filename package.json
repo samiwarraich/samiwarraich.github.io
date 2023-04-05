@@ -13,31 +13,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.11",
     "@emailjs/browser": "^3.9.1",
     "@iconify/react": "^4.1.0",
     "@next/eslint-plugin-next": "13.2.4",
     "bootstrap": "^5.0.2",
     "classnames": "^2.3.1",
     "firebase": "^9.19.1",
-    "graphql": "^16.6.0",
     "headroom.js": "^0.12.0",
-    "moment": "^2.29.1",
     "next": "^13.2.4",
-    "nouislider": "^15.2.0",
     "particles-bg": "^2.5.5",
     "prop-types": "^15.7.2",
     "react": "^18.2.0",
-    "react-datetime": "^3.0.4",
     "react-dom": "^18.2.0",
     "react-easy-emoji": "1.8.1",
-    "react-headroom": "^3.1.1",
     "react-lottie": "^1.2.3",
     "react-reveal": "^1.2.2",
     "react-scripts": "^5.0.1",
-    "react-typist": "^2.0.5",
-    "reactstrap": "^8.9.0",
-    "sharp": "^0.32.0"
+    "reactstrap": "^8.9.0"
   },
   "devDependencies": {
     "eslint": "8.37.0",

@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
-
 import { greetings, socialLinks } from "../portfolio";
 import Headroom from "headroom.js";
-import Link from "next/link";
 import {
   UncontrolledCollapse,
   NavbarBrand,
@@ -24,7 +21,6 @@ const Navigation = () => {
 
   useEffect(() => {
     let headroom = new Headroom(document.getElementById("navbar-main"));
-    // initialise
     headroom.init();
   });
 
@@ -37,7 +33,7 @@ const Navigation = () => {
           id="navbar-main"
         >
           <Container>
-            <NavbarBrand href="/" className="mr-lg-5">
+            <NavbarBrand href="/" className="mr-lg-5 pt-2">
               <h2 className="text-white" id="nav-title">
                 {greetings.name}
               </h2>
