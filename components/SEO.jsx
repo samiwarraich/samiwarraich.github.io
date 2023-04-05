@@ -1,19 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import PropTypes from "prop-types";
-import { splitStringAtClosestSpace } from "../utils/splitStringAtClosestSpace";
 import { seoData } from "../portfolio";
 
 function SEO() {
-  const {
-    title,
-    author,
-    description: descriptionStr,
-    image,
-    url,
-    keywords,
-  } = seoData;
-  const description = splitStringAtClosestSpace(descriptionStr, 155)[0];
+  const { title, author, description, image, url, keywords } = seoData;
   return (
     <Head>
       {/* Settings */}
