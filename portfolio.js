@@ -4,7 +4,7 @@ export const greetings = {
   name: "Sami Warraich",
   title: "Hi, I'm Sami Warraich",
   description:
-    "I'm a passionate Full stack developer having experience in developing Full stack Web applications with React.js, Next.js, Node.js, Express.js, and Mobile application development on React Native.",
+    "Full-stack developer with experience in building web and mobile applications using React.js, Next.js, Node.js, Express.js, and React Native.",
   resumeLink: "https://samiwarraich.github.io/resume",
 };
 
@@ -24,14 +24,15 @@ export const socialLinks = {
 
 export const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle:
+    "Enthusiastic full-stack developer eager to learn and explore various tech stacks.",
   data: [
     {
       title: "Full Stack Development",
       lottieAnimationFile: "/lottie/webdev.json",
       skills: [
         emoji(
-          "⚡ Develop highly interactive full stack web and mobile applications."
+          "⚡ Skilled in developing interactive web and mobile applications across various tech stacks."
         ),
       ],
       softwareSkills: [
@@ -131,8 +132,7 @@ export const educationInfo = [
     // grade: "3.8 GPA",
     desc: "Computer Science(CS) degree",
     descBullets: [
-      "The Bachelor of Science in Computer Science(CS) degree option allows students to attain knowledge of effective software application development, client/server application development, and database application development and management for businesses.",
-      "The CS degree option is designed to prepare students for careers in the field of software engineering and development.",
+      "The Computer Science (CS) degree option provides students with the skills and knowledge to develop, implement, and manage software applications and systems for various business domains. Students learn how to use front-end, back-end, and database technologies to create client/server solutions that are secure and efficient.",
     ],
   },
 ];
@@ -143,7 +143,7 @@ export const experience = [
     role: "Software Engineer",
     companylogo: "/img/icons/common/dabeeb.jpeg",
     date: "May 2022 - Present",
-    desc: "I worked as Software Engineer on Dabeeb App, Dabeeb is a Saudi company specializing in renting scooters and bicycles for transportation in the Kingdom of Saudi Arabia, I am responsible for the development and maintenance of the app, Utilizing my skills in Typescript, React, Node, Express, PostgreSQL, and Hasura.",
+    desc: "As a Software Engineer at Dabeeb, a Saudi company that offers scooter and bicycle rental services, I developed and maintained the app using Typescript, React, Node, Express, PostgreSQL, and Hasura.",
     // descBullets: [],
   },
   {
@@ -151,14 +151,14 @@ export const experience = [
     role: "Junior Software Engineer",
     companylogo: "/img/icons/common/gigalabs.jpeg",
     date: "Feb 2021 – Mar 2022",
-    desc: "As a Junior Software Engineer at Gigalabs, I am responsible for the development and maintenance of the client's application, Utilizing my skills in Javascript, React, Node, Express, MongoDB, and PostgreSQL.",
+    desc: "At Gigalabs, I developed and maintained the client’s app as a Junior Software Engineer, using Javascript, React, Node, Express, MongoDB, and PostgreSQL.",
   },
 ];
 
 export const projects = [
   {
     name: "Dabeeb",
-    desc: "Dabeeb is a Saudi company specializing in renting scooters and bicycles for transportation in the Kingdom of Saudi Arabia.",
+    desc: "Dabeeb provides scooter and bicycle rental services that allow users to access transportation anytime, anywhere. Users can book, unlock, and pay for their rides using a mobile app. Dabeeb aims to make urban mobility more accessible, affordable, and sustainable.",
     links: [
       {
         icon: "bxl:play-store",
@@ -172,7 +172,7 @@ export const projects = [
   },
   {
     name: "linesheets",
-    desc: "Linesheets is an online platform allowing its users to customize and share their product collections.",
+    desc: "Linesheets is an online platform that enables users to create and share their own product collections with ease. Users can customize their collections with images, descriptions, prices, and other details. Users can also export their collections as PDFs or share them online with buyers and retailers. Linesheets is a powerful tool for product designers, wholesalers, and distributors.",
     links: [
       {
         icon: "mdi:internet",
@@ -182,7 +182,7 @@ export const projects = [
   },
   {
     name: "New York Adventure Club",
-    desc: "NYAC is a tour company, which gives you insider access to the citys best-kept secrets.",
+    desc: "NYAC is a tour company that takes you beyond the tourist traps and shows you the hidden gems of New York City. You’ll discover the city’s best-kept secrets, from speakeasies and street art to rooftop gardens and underground tunnels. NYAC’s guides are locals who know the city inside out and will share stories and insights that you won’t find in any guidebook.",
     links: [
       {
         icon: "mdi:internet",
@@ -192,7 +192,7 @@ export const projects = [
   },
   {
     name: "bookit",
-    desc: "bookit is an online booking system that allows guests to make secure online reservations and helps hotels to accept bookings and collect payments online.",
+    desc: "Bookit is an online booking system that simplifies the reservation process for both guests and hotels. Guests can make secure online reservations. Hotels can accept bookings and collect payments online with ease. Bookit is powered by Next.js,MongoDB and Stripe, offering a fast and reliable service.",
     links: [
       {
         icon: "mdi:internet",
@@ -206,7 +206,7 @@ export const projects = [
   },
   {
     name: "Phanox",
-    desc: "Phanox is an e-commerce website built with Next.js, Sanity. Now your reach to all your favorite headphones is just one touch apart.",
+    desc: "Phanox is an e-commerce website that lets you discover and buy your favorite headphones with ease. Built with Next.js and Sanity.",
     links: [
       {
         icon: "mdi:internet",
@@ -219,12 +219,12 @@ export const projects = [
     ],
   },
   {
-    name: "Color Gradient Bot",
-    desc: "A Telegram bot that sends random gradient images with every message. Add some color to your chats.",
+    name: "Color Gradient",
+    desc: "Color Gradient is a suite of bots that create and share stunning gradient color images on Twitter and Telegram platforms. You can enjoy these beautiful images every day by following the bots on social media or requesting them via messages or mentions. You can also join the Color Gradient channel on Telegram to get updates and tips on how to use the bots.",
     links: [
       {
-        icon: "ic:baseline-telegram",
-        url: "https://t.me/colorGradientBot",
+        icon: "mdi:internet",
+        url: "https://colorgradient.vercel.app",
       },
     ],
   },
@@ -243,7 +243,7 @@ export const seoData = {
   title: "Sami Warraich",
   author: "Sami Warraich",
   description:
-    "I'm a passionate Full stack developer having experience in developing Full stack Web applications with React.js, Next.js, Node.js, Express.js, and Mobile application development on React Native.",
+    "Full-stack developer with experience in building web and mobile applications using React.js, Next.js, Node.js, Express.js, and React Native.",
   image:
     "https://avatars.githubusercontent.com/u/55091638?s=400&u=c67569833bfa4617eaa179e4d3512cb0800d2a88&v=4",
   url: "https://samiwarraich.github.io",
@@ -252,13 +252,13 @@ export const seoData = {
     "Warraich",
     "Sami Warraich",
     "samiwarraich",
-    "software engineer",
-    "portfolio",
+    "full-stack software engineer with React and Node experience",
+    "Sami Warraich’s portfolio website",
     "my portfolio",
-    "developer",
-    "full stack developer",
+    "coder",
+    "full stack engineer",
     "open to work",
-    "web developer",
+    "web developer in Riyadh",
     "gigalabs",
     "dabeeb",
     "next.js",
@@ -272,6 +272,6 @@ export const seoData = {
     "Gujrat",
     "linesheets",
     "New York Adventure Club",
-    "color gradient bot",
+    "Color Gradient by Sami Warraich",
   ],
 };
