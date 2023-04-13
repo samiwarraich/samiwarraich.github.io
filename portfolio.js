@@ -172,7 +172,7 @@ export const projects = [
   },
   {
     name: "linesheets",
-    desc: "Linesheets is an online platform that enables users to create and share their own product collections with ease. Users can customize their collections with images, descriptions, prices, and other details. Users can also export their collections as PDFs or share them online with buyers and retailers. Linesheets is a powerful tool for product designers, wholesalers, and distributors.",
+    desc: "Linesheets is an online platform that enables users to create and share their own product collections with ease. Users can customize their collections with images, descriptions, prices, and other details. Users can also export their collections as PDFs or share them online with buyers and retailers.",
     links: [
       {
         icon: "mdi:internet",
@@ -220,7 +220,7 @@ export const projects = [
   },
   {
     name: "Color Gradient",
-    desc: "Color Gradient is a suite of bots that create and share stunning gradient color images on Twitter and Telegram platforms. You can enjoy these beautiful images every day by following the bots on social media or requesting them via messages or mentions. You can also join the Color Gradient channel on Telegram to get updates and tips on how to use the bots.",
+    desc: "Color Gradient is a suite of bots that create and share gradient color images on Twitter and Telegram platforms. You can enjoy these beautiful images every day by following the bots on social media or requesting them via messages or mentions.",
     links: [
       {
         icon: "mdi:internet",
