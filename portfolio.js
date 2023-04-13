@@ -143,7 +143,7 @@ export const experience = [
     role: "Software Engineer",
     companylogo: "/img/icons/common/dabeeb.jpeg",
     date: "May 2022 - Present",
-    desc: "As a Software Engineer at Dabeeb, a Saudi company that offers scooter and bicycle rental services, I developed and maintained the app using Typescript, React, Node, Express, PostgreSQL, and Hasura.",
+    desc: "I'm working as Software Engineer at Dabeeb, a Saudi company that offers scooter and bicycle rental services, I am responsible for the development and maintenance of the app using Typescript, React,React Node, Express, PostgreSQL, and Hasura.",
     // descBullets: [],
   },
   {
@@ -151,7 +151,7 @@ export const experience = [
     role: "Junior Software Engineer",
     companylogo: "/img/icons/common/gigalabs.jpeg",
     date: "Feb 2021 – Mar 2022",
-    desc: "At Gigalabs, I developed and maintained the client’s app as a Junior Software Engineer, using Javascript, React, Node, Express, MongoDB, and PostgreSQL.",
+    desc: "At Gigalabs, I worked as a Junior Software Engineer where I am responsible for developing and maintaining various client applications. My proficiency in Javascript, React, Node, Express, MongoDB, and PostgreSQL enables me to meet the diverse needs of our clients.",
   },
 ];
 
