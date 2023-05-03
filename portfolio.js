@@ -5,7 +5,7 @@ export const greetings = {
   title: "Hi, I'm Sami Warraich",
   description:
     "Full-stack developer with experience in building web and mobile applications using React.js, Next.js, Node.js, Express.js, and React Native.",
-  resumeLink: "https://samiwarraich.github.io/resume",
+  resumeLink: "https://samiwarraich.github.io/resume/",
 };
 
 export const openSource = {
