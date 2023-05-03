@@ -274,4 +274,5 @@ export const seoData = {
     "New York Adventure Club",
     "Color Gradient by Sami Warraich",
   ],
+  twitter: { site: "@samiwarraich2", creator: "@samiwarraich2" },
 };

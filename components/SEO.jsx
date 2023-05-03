@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { seoData } from "../portfolio";
 
 function SEO() {
-  const { title, author, description, image, url, keywords } = seoData;
+  const { title, author, description, image, url, keywords, twitter } = seoData;
   return (
     <Head>
       {/* Settings */}
@@ -27,6 +27,7 @@ function SEO() {
       <meta name="title" content={title} />
       <meta name="description" content={description} />
       <meta name="author" content={author} />
+      <link name="author" content={url} />
       <meta name="keywords" content={keywords.join(", ")} />
 
       {/* For Google */}
@@ -39,16 +40,16 @@ function SEO() {
       <meta property="og:url" content={url} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
       <meta property="og:site_name" content={title} />
-      <meta property="og:see_also" content={url} />
+      <meta property="og:image" content={image} />
 
       {/* Twitter */}
-      <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content={url} />
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={description} />
-      <meta property="twitter:image" content={image} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:site" content={twitter?.site} />
+      <meta name="twitter:creator" content={twitter?.creator} />
+      <meta name="twitter:image" content={image} />
 
       {/* Favicon */}
       <link rel="apple-touch-icon" sizes="120x120" href="./favicon.png" />
@@ -66,6 +67,7 @@ SEO.prototype = {
     image: PropTypes.string,
     url: PropTypes.string,
     keywords: PropTypes.arrayOf(PropTypes.string),
+    twitter: { site: PropTypes.string, creator: PropTypes.string },
   }).isRequired,
 };
 
