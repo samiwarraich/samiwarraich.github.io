@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { analytics } from "../utils/firebase";
 import Script from "next/script";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
+      <Analytics />
       {/* <!-- Clarity tracking code for https://samiwarraich.github.io/ --> */}
       <Script id="ms-clarity">
         {`(function(c,l,a,r,i,t,y){
