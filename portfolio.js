@@ -226,6 +226,10 @@ export const projects = [
         icon: "mdi:internet",
         url: "https://colorgradient.vercel.app",
       },
+      {
+        icon: "mdi:github",
+        url: "https://github.com/samiwarraich/color-gradient",
+      },
     ],
   },
 ];
