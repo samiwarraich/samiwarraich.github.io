@@ -265,6 +265,7 @@ export const seoData = {
     "web developer in Riyadh",
     "gigalabs",
     "dabeeb",
+    "bskl",
     "next.js",
     "react",
     "expo",
