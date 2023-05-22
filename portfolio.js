@@ -218,20 +218,20 @@ export const projects = [
       },
     ],
   },
-  // {
-  //   name: "Color Gradient",
-  //   desc: "Color Gradient is a suite of bots that create and share gradient color images on Twitter and Telegram platforms. You can enjoy these beautiful images every day by following the bots on social media or requesting them via messages or mentions.",
-  //   links: [
-  //     {
-  //       icon: "mdi:internet",
-  //       url: "https://colorgradient.vercel.app",
-  //     },
-  //     {
-  //       icon: "mdi:github",
-  //       url: "https://github.com/samiwarraich/color-gradient",
-  //     },
-  //   ],
-  // },
+  {
+    name: "Pixel Muse",
+    desc: "Pixel Muse is a suite of bots that create and share random color pixel images on Twitter and Telegram platforms. You can enjoy these beautiful images every day by following the bots on social media or requesting them via messages or mentions.",
+    links: [
+      {
+        icon: "mdi:internet",
+        url: "https://pixel-muse.vercel.app",
+      },
+      // {
+      //   icon: "mdi:github",
+      //   url: "https://github.com/samiwarraich/color-gradient",
+      // },
+    ],
+  },
 ];
 
 //
