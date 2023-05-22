@@ -226,10 +226,10 @@ export const projects = [
         icon: "mdi:internet",
         url: "https://pixel-muse.vercel.app",
       },
-      // {
-      //   icon: "mdi:github",
-      //   url: "https://github.com/samiwarraich/color-gradient",
-      // },
+      {
+        icon: "mdi:github",
+        url: "https://github.com/samiwarraich/pixel-muse",
+      },
     ],
   },
 ];
