@@ -15,9 +15,9 @@ export const openSource = {
 export const contact = {};
 
 export const socialLinks = {
-  // facebook: "https://www.facebook.com/warraich.io",
-  instagram: "https://www.instagram.com/warraich.io",
-  twitter: "https://twitter.com/warraich_io",
+  // facebook: "https://www.facebook.com/samiwarra1ch",
+  instagram: "https://www.instagram.com/samiwarra1ch",
+  twitter: "https://twitter.com/samiwarra1ch",
   github: "https://github.com/samiwarraich",
   linkedin: "https://www.linkedin.com/in/sami-warraich",
 };
