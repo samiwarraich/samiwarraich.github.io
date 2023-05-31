@@ -19,7 +19,7 @@ export const socialLinks = {
   instagram: "https://www.instagram.com/samiwarra1ch",
   twitter: "https://twitter.com/samiwarra1ch",
   github: "https://github.com/samiwarraich",
-  linkedin: "https://www.linkedin.com/in/sami-warraich",
+  linkedin: "https://www.linkedin.com/in/samiwarra1ch",
 };
 
 export const skillsSection = {
