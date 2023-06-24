@@ -18,7 +18,7 @@
     "@next/eslint-plugin-next": "13.4.7",
     "bootstrap": "^5.3.0",
     "classnames": "^2.3.1",
-    "firebase": "^9.22.2",
+    "firebase": "^9.23.0",
     "headroom.js": "^0.12.0",
     "next": "^13.4.7",
     "particles-bg": "^2.5.5",
