@@ -1990,6 +1990,13 @@
   dependencies:
     glob "7.1.7"
 
+"@next/eslint-plugin-next@13.5.1":
+  version "13.5.1"
+  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-13.5.1.tgz#3a254065e0a55a49c9431df43f65d9eb1c3d88f3"
+  integrity sha512-LBlI3iQvlzRE7Y6AfIyHKuM4T6REGmFgweN2tBqEUVEfgxERBLOutV2xckXEp3Y3VbfJBBXKZNfDzs20gHimSg==
+  dependencies:
+    glob "7.1.7"
+
 "@next/swc-darwin-arm64@13.4.19":
   version "13.4.19"
   resolved "https://registry.yarnpkg.com/@next/swc-darwin-arm64/-/swc-darwin-arm64-13.4.19.tgz#77ad462b5ced4efdc26cb5a0053968d2c7dac1b6"
