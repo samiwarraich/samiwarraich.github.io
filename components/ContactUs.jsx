@@ -87,16 +87,6 @@ export const ContactUs = () => {
   return (
     <>
       <section className="section section-lg section-shaped">
-        {/* <div className="shape shape-style-3 shape-primary">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-        </div> */}
         {alert && (
           <Alert
             color={alert.color}
@@ -117,7 +107,7 @@ export const ContactUs = () => {
                     <FormGroup className={classnames("mt-5", {})}>
                       <InputGroup className="input-group-alternative">
                         <InputGroupText>
-                          <i className="ni ni-user-run" />
+                          <i className="ni ni-single-02" />
                         </InputGroupText>
                         <Input
                           innerRef={userNameRef}

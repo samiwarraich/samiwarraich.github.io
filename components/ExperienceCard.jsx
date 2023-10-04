@@ -17,7 +17,7 @@ const ExperienceCard = ({ data }) => {
           style={{ flex: 1 }}
           className="shadow-lg--hover mb-3 shadow border-0 text-center rounded"
         >
-          <CardBody className="">
+          <CardBody className="px-5">
             <img
               src={data.companylogo}
               style={{
@@ -41,16 +41,16 @@ const ExperienceCard = ({ data }) => {
               {data.role}
             </CardSubtitle>
             <CardSubtitle>{data.date}</CardSubtitle>
-            <CardText tag="div" className="description my-3 text-left">
+            <p tag="div" className="description my-3 text-justify">
               {data.desc}
-              <ul>
-                {data.descBullets
-                  ? data.descBullets.map((desc) => {
-                      return <li key={desc}>{desc}</li>;
-                    })
-                  : null}
-              </ul>
-            </CardText>
+            </p>
+            <ul>
+              {data?.descBullets?.length
+                ? data.descBullets.map((desc) => {
+                    return <li key={desc}>{desc}</li>;
+                  })
+                : null}
+            </ul>
           </CardBody>
         </Card>
       </Fade>

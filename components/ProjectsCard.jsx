@@ -12,7 +12,7 @@ const ProjectsCard = ({ data }) => {
             <div className="d-flex px-3">
               <div className="pl-4">
                 <h3>{data.name}</h3>
-                <p className="description mt-3">{data.desc}</p>
+                <p className="description mt-3 text-justify">{data.desc}</p>
                 {data?.links?.map((link, i) => (
                   <Button
                     key={i}
