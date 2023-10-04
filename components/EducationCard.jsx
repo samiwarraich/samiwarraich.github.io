@@ -19,9 +19,9 @@ const EducationCard = ({ education }) => {
                   {education.grade}
                 </Badge>
               )}
-              <p className="description mt-3">{education.desc}</p>
-              <ul>
-                {education.descBullets
+              <p className="description mt-3 text-justify">{education.desc}</p>
+              <ul className="text-justify">
+                {education?.descBullets?.length
                   ? education.descBullets.map((desc) => {
                       return <li key={desc}>{desc}</li>;
                     })

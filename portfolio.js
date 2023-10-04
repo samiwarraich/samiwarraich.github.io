@@ -160,10 +160,8 @@ export const educationInfo = [
     subHeader: "Bachelor of Science (Computer Science)",
     duration: "2016-2021",
     // grade: "3.8 GPA",
-    desc: "Computer Science(CS) degree",
-    descBullets: [
-      "The Computer Science (CS) degree option provides students with the skills and knowledge to develop, implement, and manage software applications and systems for various business domains. Students learn how to use front-end, back-end, and database technologies to create client/server solutions that are secure and efficient.",
-    ],
+    desc: "My Bachelor's degree in Computer Science from Gujrat Institute of Management Sciences provided me with a strong foundation in software development and system management. Throughout the program, I gained expertise in front-end and back-end technologies and developed the skills to create secure and efficient client/server solutions. This education not only enhanced my technical proficiency but also cultivated problem-solving abilities, critical thinking, and attention to detail. These skills have proven invaluable in my career, enabling me to contribute effectively to technology-driven projects and adapt to evolving technological landscapes.",
+    descBullets: [],
   },
 ];
 
