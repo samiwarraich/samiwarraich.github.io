@@ -14,13 +14,43 @@ export const openSource = {
 
 export const contact = {};
 
-export const socialLinks = {
-  // facebook: "https://www.facebook.com/samiwarra1ch",
-  instagram: "https://www.instagram.com/samiwarra1ch",
-  twitter: "https://twitter.com/samiwarra1ch",
-  github: "https://github.com/samiwarraich",
-  linkedin: "https://www.linkedin.com/in/samiwarra1ch",
-};
+export const socialLinks = [
+  // {
+  //   type: "facebook",
+  //   link: "https://www.facebook.com/samiwarra1ch",
+  //   icon: "fa fa-facebook",
+  //   color: "facebook",
+  //   ariaLabel: "Facebook",
+  // },
+  {
+    type: "instagram",
+    link: "https://www.instagram.com/samiwarra1ch",
+    icon: "fa fa-instagram",
+    color: "instagram",
+    ariaLabel: "Instagram",
+  },
+  {
+    type: "twitter",
+    link: "https://twitter.com/samiwarra1ch",
+    icon: "fa fa-twitter",
+    color: "twitter",
+    ariaLabel: "Twitter",
+  },
+  {
+    type: "github",
+    link: "https://github.com/samiwarraich",
+    icon: "fa fa-github",
+    color: "github",
+    ariaLabel: "Github",
+  },
+  {
+    type: "linkedin",
+    link: "https://www.linkedin.com/in/samiwarra1ch",
+    icon: "fa fa-linkedin",
+    color: "twitter",
+    ariaLabel: "Linkedin",
+  },
+];
 
 export const skillsSection = {
   title: "What I do",
