@@ -90,8 +90,6 @@ jobs:
           echo NEXT_PUBLIC_MS_CLARITY=${{ secrets.NEXT_PUBLIC_MS_CLARITY }} >> .env.local
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
-      - name: Static HTML export with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
