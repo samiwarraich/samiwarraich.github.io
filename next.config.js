@@ -1,7 +1,6 @@
 module.exports = {
-  reactStrictMode: false,
-  output: 'export',
+  output: "export",
   images: {
-    domains: ["avatars.githubusercontent.com"],
+    remotePatterns: [{ hostname: "avatars.githubusercontent.com" }],
   },
 };
