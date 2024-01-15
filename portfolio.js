@@ -22,19 +22,19 @@ export const socialLinks = [
   //   color: "facebook",
   //   ariaLabel: "Facebook",
   // },
+  // {
+  //   type: "instagram",
+  //   link: "https://www.instagram.com/samiwarra1ch",
+  //   icon: "fa fa-instagram",
+  //   color: "instagram",
+  //   ariaLabel: "Instagram",
+  // },
   {
-    type: "instagram",
-    link: "https://www.instagram.com/samiwarra1ch",
-    icon: "fa fa-instagram",
-    color: "instagram",
-    ariaLabel: "Instagram",
-  },
-  {
-    type: "twitter",
-    link: "https://twitter.com/samiwarra1ch",
-    icon: "fa fa-twitter",
+    type: "linkedin",
+    link: "https://www.linkedin.com/in/samiwarra1ch",
+    icon: "fa fa-linkedin",
     color: "twitter",
-    ariaLabel: "Twitter",
+    ariaLabel: "Linkedin",
   },
   {
     type: "github",
@@ -44,11 +44,11 @@ export const socialLinks = [
     ariaLabel: "Github",
   },
   {
-    type: "linkedin",
-    link: "https://www.linkedin.com/in/samiwarra1ch",
-    icon: "fa fa-linkedin",
+    type: "twitter",
+    link: "https://twitter.com/samiwarra1ch",
+    icon: "fa fa-twitter",
     color: "twitter",
-    ariaLabel: "Linkedin",
+    ariaLabel: "Twitter",
   },
 ];
 
