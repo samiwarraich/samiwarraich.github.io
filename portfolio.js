@@ -5,7 +5,7 @@ export const greetings = {
   title: "Hi, I'm Sami Warraich",
   description:
     "Full-stack developer with experience in building web and mobile applications using React.js, Next.js, Node.js, Express.js, and React Native.",
-  resumeLink: "https://samiwarraich.github.io/resume/",
+  resumeLink: "https://sami.warraich.co/resume/",
 };
 
 export const openSource = {
@@ -278,7 +278,7 @@ export const seoData = {
     "Full-stack developer with experience in building web and mobile applications using React.js, Next.js, Node.js, Express.js, and React Native.",
   image:
     "https://avatars.githubusercontent.com/u/55091638?s=400&u=c67569833bfa4617eaa179e4d3512cb0800d2a88&v=4",
-  url: "https://samiwarraich.github.io",
+  url: "https://sami.warraich.co",
   keywords: [
     "Sami",
     "Warraich",
