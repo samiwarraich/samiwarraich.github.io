@@ -13,7 +13,10 @@ function SEO() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       {/* Search Engines */}
       <meta name="robots" content="all" />
-      <meta name="google-site-verification" content="IGjNdVFWj4etSWkG0ppYttTNrxa7Mz0U08uJq8T48VE" />
+      <meta
+        name="google-site-verification"
+        content="IGjNdVFWj4etSWkG0ppYttTNrxa7Mz0U08uJq8T48VE"
+      />
       <meta name="msvalidate.01" content="DD992E9CC85A0E458EA3599D0526C78A" />
       <meta name="msnbot" content="preview" />
       <link rel="manifest" href="/manifest.json" />
@@ -28,9 +31,17 @@ function SEO() {
       <meta name="keywords" content={keywords.join(", ")} />
 
       {/* For Google */}
-      <meta itemProp="name" content={title} />
-      <meta itemProp="description" content={description} />
-      <meta itemProp="image" content={image} />
+      <script type="application/ld+json">
+        {`
+          {
+            "@context" : "https://schema.org",
+            "@type" : "WebSite",
+            "name" : ${title},
+            "alternateName" : ${title},
+            "url" : ${url}
+          }
+        `}
+      </script>
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
