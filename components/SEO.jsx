@@ -36,9 +36,9 @@ function SEO() {
           {
             "@context" : "https://schema.org",
             "@type" : "WebSite",
-            "name" : ${title},
-            "alternateName" : ${title},
-            "url" : ${url}
+            "name" : "${title}",
+            "alternateName" : "${title}",
+            "url" : "${url}"
           }
         `}
       </script>
