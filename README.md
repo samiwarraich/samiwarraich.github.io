@@ -14,7 +14,7 @@ Welcome to my software developer portfolio template built with Next.js and Boots
 
 ## Demo
 
-To view a live demo, click here: https://samiwarraich.github.io
+To view a live demo, click here: https://sami.warraich.co
 
 ## Getting Started
 
