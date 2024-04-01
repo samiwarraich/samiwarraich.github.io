@@ -33,14 +33,13 @@ function SEO() {
       {/* For Google */}
       <script type="application/ld+json">
         {`
-      {
-        "@context" : "https://schema.org",
-        "@type" : "WebSite",
-        "name" : "${title}",
-        "alternateName" : "${title}",
-        "url" : "${url}"
-      }
-    `}
+          {
+            "@context" : "https://schema.org",
+            "@type" : "WebSite",
+            "name" : "${title}",
+            "url" : "${url}"
+          }
+        `}
       </script>
 
       {/* Open Graph / Facebook */}
