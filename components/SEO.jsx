@@ -31,16 +31,9 @@ function SEO() {
       <meta name="keywords" content={keywords.join(", ")} />
 
       {/* For Google */}
-      <script type="application/ld+json">
-        {`
-          {
-            "@context" : "https://schema.org",
-            "@type" : "WebSite",
-            "name" : "${title}",
-            "url" : "${url}"
-          }
-        `}
-      </script>
+      <meta itemProp="name" content={title} />
+      <meta itemProp="description" content={description} />
+      <meta itemProp="image" content={image} />
 
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
