@@ -4788,12 +4788,12 @@ escodegen@^2.0.0:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-next@^14.2.9:
-  version "14.2.9"
-  resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-14.2.9.tgz#7230dbf285ff7c377be13e8f05febcdbfc6276fc"
-  integrity sha512-aNgGqWBp2KFcuEf9zNqmv+8dBkOrdyOlCIbdtyw7fiCQioLqXNcXmalAyeNtVyE95Kwgg11bgXvuVqdxpbR79g==
+eslint-config-next@^14.2.10:
+  version "14.2.10"
+  resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-14.2.10.tgz#bd56aa506bde6ef256b533a399dcdd5c9aee1c11"
+  integrity sha512-qO/L8LbfhBhobNowiJP+UBOb7w+JRvbz6T5X05heLOGO6/VwDIIsZL6XjWiKJ45lnwSpwP1kxoBBxCYr2wTMaw==
   dependencies:
-    "@next/eslint-plugin-next" "14.2.9"
+    "@next/eslint-plugin-next" "14.2.10"
     "@rushstack/eslint-patch" "^1.3.3"
     "@typescript-eslint/eslint-plugin" "^5.4.2 || ^6.0.0 || 7.0.0 - 7.2.0"
     "@typescript-eslint/parser" "^5.4.2 || ^6.0.0 || 7.0.0 - 7.2.0"
