@@ -4,7 +4,7 @@ export const greetings = {
   name: "Sami Warraich",
   title: "Hi, I'm Sami Warraich",
   description:
-    "Full-stack developer with experience in building web and mobile applications using React.js, Next.js, Node.js, Express.js, and React Native.",
+    "Full-stack developer with expertise in JavaScript, React, and Node.js ecosystems. Specializing in building responsive web applications and cross-platform mobile solutions. Passionate about creating scalable, efficient, and user-friendly software that solves real-world problems and enhances business performance.",
   resumeLink: "https://sami.warraich.co/resume/",
 };
 
@@ -272,40 +272,77 @@ export const feedbacks = [
 ];
 
 export const seoData = {
-  title: "Sami Warraich",
+  name: "Sami Warraich",
+  jobTitle: "Full-Stack Software Engineer",
   author: "Sami Warraich",
   description:
-    "Full-stack developer with experience in building web and mobile applications using React.js, Next.js, Node.js, Express.js, and React Native.",
+    "Full-stack developer with expertise in JavaScript, React, and Node.js ecosystems. Specializing in building responsive web applications and cross-platform mobile solutions. Passionate about creating scalable, efficient, and user-friendly software that solves real-world problems and enhances business performance.",
   image:
     "https://avatars.githubusercontent.com/u/55091638?s=400&u=c67569833bfa4617eaa179e4d3512cb0800d2a88&v=4",
   url: "https://sami.warraich.co",
   keywords: [
-    "Sami",
-    "Warraich",
+    // Core skills and technologies
+    "Full-Stack Developer",
+    "Software Engineer",
+    "React.js Developer",
+    "Node.js Developer",
+    "JavaScript Expert",
+    "TypeScript Developer",
+    "Next.js Specialist",
+    "Express.js",
+    "React Native Developer",
+
+    // Personal branding
     "Sami Warraich",
     "samiwarraich",
-    "full-stack software engineer with React and Node experience",
-    "Sami Warraich’s portfolio website",
-    "my portfolio",
-    "coder",
-    "full stack engineer",
-    "open to work",
-    "web developer in Riyadh",
-    "gigalabs",
-    "dabeeb",
-    "bskl",
-    "next.js",
-    "react",
-    "expo",
-    "node",
-    "react native",
-    "GIMS",
-    "PMAS AAUR",
-    "Riyadh",
-    "Gujrat",
-    "linesheets",
-    "New York Adventure Club",
-    "Color Gradient by Sami Warraich",
+    "Sami Warraich portfolio",
+
+    // Job-related terms
+    "Web Developer",
+    "Mobile App Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Full Stack Engineer",
+
+    // Location-specific
+    "Web Developer Riyadh",
+    "Software Engineer Saudi Arabia",
+
+    // Industry terms
+    "RESTful API Development",
+    "Database Management",
+    "Cloud Computing",
+    "Agile Development",
+    "UI/UX Integration",
+
+    // Soft skills and attributes
+    "Problem Solver",
+    "Tech Innovator",
+    "Open to Work",
+
+    // Projects (generic terms)
+    "Web Application Development",
+    "Mobile App Projects",
+    "E-commerce Solutions",
+    "Data Visualization",
+
+    // Education (if relevant)
+    "Computer Science Graduate",
+    "Software Engineering Degree",
   ],
   twitter: { site: "@samiwarra1ch", creator: "@samiwarra1ch" },
+  skills: [
+    "React.js",
+    "Next.js",
+    "Node.js",
+    "Express.js",
+    "React Native",
+    "JavaScript",
+    "TypeScript",
+  ],
+  socialLinks: {
+    github: "https://github.com/samiwarraich",
+    linkedin: "https://linkedin.com/in/samiwarra1ch",
+    twitter: "https://x.com/samiwarra1ch",
+  },
 };

@@ -4,70 +4,99 @@ import PropTypes from "prop-types";
 import { seoData } from "../portfolio";
 
 function SEO() {
-  const { title, author, description, image, url, keywords, twitter } = seoData;
+  const {
+    name,
+    jobTitle,
+    skills,
+    author,
+    description,
+    image,
+    url,
+    keywords,
+    twitter,
+    socialLinks,
+  } = seoData;
+  const title = `${name} | ${jobTitle}`;
   return (
     <Head>
-      {/* Settings */}
+      {/* Basic Meta Tags */}
       <meta charSet="utf-8" />
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      {/* Search Engines */}
-      <meta name="robots" content="all" />
+      <meta name="robots" content="index, follow" />
+      <meta name="language" content="English" />
+      <link rel="canonical" href={url} />
+      <link rel="manifest" href="/site.webmanifest" />
+
+      {/* Title and Main Meta Tags */}
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta name="author" content={author} />
+      <link rel="author" href={url} />
+      <meta name="keywords" content={keywords.join(", ")} />
+
+      {/* Open Graph / Facebook */}
+      <meta property="og:type" content="profile" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:image" content={image} />
+      <meta property="og:url" content={url} />
+      <meta property="og:site_name" content={name} />
+
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content={twitter?.site} />
+      <meta name="twitter:creator" content={twitter?.creator} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={image} />
+
+      {/* Structured Data */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: name,
+          url: url,
+          image: image,
+          jobTitle: jobTitle,
+          description: description,
+          sameAs: Object.values(socialLinks),
+          knowsAbout: skills,
+          "@id": url,
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": url,
+          },
+        })}
+      </script>
+
+      {/* Favicons */}
+      <link rel="apple-touch-icon" sizes="180x180" href="./favicon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
+
+      {/* Verification Tags */}
       <meta
         name="google-site-verification"
         content="IGjNdVFWj4etSWkG0ppYttTNrxa7Mz0U08uJq8T48VE"
       />
       <meta name="msvalidate.01" content="DD992E9CC85A0E458EA3599D0526C78A" />
-      <meta name="msnbot" content="preview" />
-      <link rel="manifest" href="/manifest.json" />
-      <link rel="canonical" href={url} />
-
-      {/* Page Information */}
-      <title lang="en-US">{title}</title>
-      <meta name="title" content={title} />
-      <meta name="description" content={description} />
-      <meta name="author" content={author} />
-      <link name="author" content={url} />
-      <meta name="keywords" content={keywords.join(", ")} />
-
-      {/* For Google */}
-      <meta itemProp="name" content={title} />
-      <meta itemProp="description" content={description} />
-      <meta itemProp="image" content={image} />
-
-      {/* Open Graph / Facebook */}
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content={url} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:site_name" content={title} />
-      <meta property="og:image" content={image} />
-
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:site" content={twitter?.site} />
-      <meta name="twitter:creator" content={twitter?.creator} />
-      <meta name="twitter:image" content={image} />
-
-      {/* Favicon */}
-      <link rel="apple-touch-icon" sizes="120x120" href="./favicon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="./favicon.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
     </Head>
   );
 }
 
 SEO.prototype = {
   data: PropTypes.shape({
-    title: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    jobTitle: PropTypes.string.isRequired,
     author: PropTypes.string,
     description: PropTypes.string,
     image: PropTypes.string,
     url: PropTypes.string,
     keywords: PropTypes.arrayOf(PropTypes.string),
+    skills: PropTypes.arrayOf(PropTypes.string),
     twitter: { site: PropTypes.string, creator: PropTypes.string },
+    socialLinks: PropTypes.objectOf(PropTypes.string).isRequired,
   }).isRequired,
 };
 
