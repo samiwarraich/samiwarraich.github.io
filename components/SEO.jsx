@@ -17,6 +17,24 @@ function SEO() {
     socialLinks,
   } = seoData;
   const title = `${name} | ${jobTitle}`;
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: name,
+    url: url,
+    image: image,
+    jobTitle: jobTitle,
+    description: description,
+    sameAs: Object.values(socialLinks),
+    knowsAbout: skills,
+    "@id": url,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+  };
+
   return (
     <Head>
       {/* Basic Meta Tags */}
@@ -51,24 +69,12 @@ function SEO() {
       <meta name="twitter:image" content={image} />
 
       {/* Structured Data */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          name: name,
-          url: url,
-          image: image,
-          jobTitle: jobTitle,
-          description: description,
-          sameAs: Object.values(socialLinks),
-          knowsAbout: skills,
-          "@id": url,
-          mainEntityOfPage: {
-            "@type": "WebPage",
-            "@id": url,
-          },
-        })}
-      </script>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData, null, 2),
+        }}
+      />
 
       {/* Favicons */}
       <link rel="apple-touch-icon" sizes="180x180" href="./favicon.png" />
