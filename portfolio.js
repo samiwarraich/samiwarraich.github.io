@@ -343,6 +343,6 @@ export const seoData = {
   socialLinks: {
     github: "https://github.com/samiwarraich",
     linkedin: "https://linkedin.com/in/samiwarra1ch",
-    twitter: "https://x.com/samiwarra1ch",
+    twitter: "https://twitter.com/samiwarra1ch",
   },
 };
