@@ -20,7 +20,7 @@ function SEO() {
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": ["WebSite", "ProfilePage"],
+    "@type": "WebSite",
     name: name,
     url: url,
     mainEntity: {
