@@ -20,7 +20,9 @@ function SEO() {
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
+    "@type": ["WebSite", "ProfilePage"],
+    name: name,
+    url: url,
     mainEntity: {
       "@type": "Person",
       name: name,
@@ -45,18 +47,21 @@ function SEO() {
 
       {/* Title and Main Meta Tags */}
       <title>{title}</title>
+      <meta name="title" content={title} />
+      <meta name="application-name" content={name} />
+      <meta name="apple-mobile-web-app-title" content={name} />
       <meta name="description" content={description} />
       <meta name="author" content={author} />
       <link rel="author" href={url} />
       <meta name="keywords" content={keywords.join(", ")} />
 
       {/* Open Graph / Facebook */}
-      <meta property="og:type" content="profile" />
+      <meta property="og:site_name" content={name} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
-      <meta property="og:site_name" content={name} />
+      <meta property="og:type" content="profile" />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
