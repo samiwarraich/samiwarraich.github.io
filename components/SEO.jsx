@@ -16,7 +16,6 @@ function SEO() {
     twitter,
     socialLinks,
   } = seoData;
-  const title = `${name} | ${jobTitle}`;
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -46,8 +45,8 @@ function SEO() {
       <link rel="manifest" href="/site.webmanifest" />
 
       {/* Title and Main Meta Tags */}
-      <title>{title}</title>
-      <meta name="title" content={title} />
+      <title>{name}</title>
+      <meta name="title" content={name} />
       <meta name="application-name" content={name} />
       <meta name="apple-mobile-web-app-title" content={name} />
       <meta name="description" content={description} />
@@ -57,7 +56,7 @@ function SEO() {
 
       {/* Open Graph / Facebook */}
       <meta property="og:site_name" content={name} />
-      <meta property="og:title" content={title} />
+      <meta property="og:title" content={name} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />
@@ -67,7 +66,7 @@ function SEO() {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content={twitter?.site} />
       <meta name="twitter:creator" content={twitter?.creator} />
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:title" content={name} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
 
@@ -85,10 +84,6 @@ function SEO() {
       <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
 
       {/* Verification Tags */}
-      {/* <meta
-        name="google-site-verification"
-        content="IGjNdVFWj4etSWkG0ppYttTNrxa7Mz0U08uJq8T48VE"
-      /> */}
       <meta
         name="google-site-verification"
         content="ELB_vUPdHzKluiiPGhpV3ORRmCo1ogHoTYwRMp6Bm54"
