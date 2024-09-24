@@ -85,9 +85,13 @@ function SEO() {
       <link rel="icon" type="image/png" sizes="16x16" href="./favicon.png" />
 
       {/* Verification Tags */}
-      <meta
+      {/* <meta
         name="google-site-verification"
         content="IGjNdVFWj4etSWkG0ppYttTNrxa7Mz0U08uJq8T48VE"
+      /> */}
+      <meta
+        name="google-site-verification"
+        content="ELB_vUPdHzKluiiPGhpV3ORRmCo1ogHoTYwRMp6Bm54"
       />
       <meta name="msvalidate.01" content="DD992E9CC85A0E458EA3599D0526C78A" />
     </Head>
