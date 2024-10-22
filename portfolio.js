@@ -4,7 +4,7 @@ export const greetings = {
   name: "Sami Warraich",
   title: "Hi, I'm Sami Warraich",
   description:
-    "Full-stack developer with expertise in JavaScript, React, and Node.js ecosystems. Specializing in building responsive web applications and cross-platform mobile solutions. Passionate about creating scalable, efficient, and user-friendly software that solves real-world problems and enhances business performance.",
+    "Full Stack Developer with 3+ years of experience in building web and mobile applications. Specialized in React, React Native, and Node.js. Proven track record of delivering efficient and scalable solutions across diverse projects. Committed to continuous learning and innovation in software development.",
   resumeLink: "https://sami.warraich.co/resume/",
 };
 
@@ -55,7 +55,7 @@ export const socialLinks = [
 export const skillsSection = {
   title: "What I do",
   subTitle:
-    "Enthusiastic full-stack developer eager to learn and explore various tech stacks.",
+    "Experienced full-stack developer focused on delivering efficient and scalable applications",
   data: [
     {
       title: "Full Stack Development",
@@ -67,72 +67,89 @@ export const skillsSection = {
       ],
       softwareSkills: [
         {
-          skillName: "Javascript",
-          fontAwesomeClassname: "logos:javascript",
+          id: "JavaScript",
+          name: "JavaScript",
+          className: "logos:javascript",
         },
         {
-          skillName: "Typescript",
-          fontAwesomeClassname: "vscode-icons:file-type-typescript-official",
+          id: "TypeScript",
+          name: "TypeScript",
+          className: "vscode-icons:file-type-typescript-official",
         },
         {
-          skillName: "React",
-          fontAwesomeClassname: "vscode-icons:file-type-reactjs",
+          id: "React",
+          name: "React",
+          className: "vscode-icons:file-type-reactjs",
         },
         {
-          skillName: "Node",
-          fontAwesomeClassname: "logos:nodejs-icon",
+          id: "Node-js",
+          name: "Node.js",
+          className: "logos:nodejs-icon",
         },
         {
-          skillName: "Express",
-          fontAwesomeClassname: "logos:express",
+          id: "Express-js",
+          name: "Express.js",
+          className: "logos:express",
         },
         {
-          skillName: "NextJS",
-          fontAwesomeClassname: "logos:nextjs-icon",
+          id: "Next-js",
+          name: "Next.js",
+          className: "logos:nextjs-icon",
         },
         {
-          skillName: "Expo",
-          fontAwesomeClassname: "logos:expo-icon",
+          id: "Expo",
+          name: "Expo",
+          className: "logos:expo-icon",
         },
         {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "logos:mongodb-icon",
+          id: "MongoDB",
+          name: "MongoDB",
+          className: "logos:mongodb-icon",
         },
         {
-          skillName: "firebase",
-          fontAwesomeClassname: "logos:firebase",
+          id: "firebase",
+          name: "Firebase",
+          className: "logos:firebase",
         },
         {
-          skillName: "Redux",
-          fontAwesomeClassname: "logos:redux",
+          id: "Redux",
+          name: "Redux",
+          className: "logos:redux",
         },
         {
-          skillName: "graphql",
-          fontAwesomeClassname: "logos:graphql",
+          id: "graphql",
+          name: "GraphQL",
+          className: "logos:graphql",
         },
         {
-          skillName: "PostgreSQL",
-          fontAwesomeClassname: "logos:postgresql",
+          id: "PostgreSQL",
+          name: "PostgreSQL",
+          className: "logos:postgresql",
         },
         {
-          skillName: "Hasura",
-          fontAwesomeClassname: "logos:hasura-icon",
+          id: "Hasura",
+          name: "Hasura",
+          className: "logos:hasura-icon",
         },
         {
-          skillName: "Cloudinary",
-          fontAwesomeClassname: "logos:cloudinary-icon",
+          id: "Cloudinary",
+          name: "Cloudinary",
+          className: "logos:cloudinary-icon",
         },
         {
-          skillName: "npm",
-          fontAwesomeClassname: "logos:npm-icon",
+          id: "npm",
+          name: "npm",
+          className: "logos:npm-icon",
         },
         {
-          skillName: "Postman",
-          fontAwesomeClassname: "logos:postman-icon",
+          id: "Postman",
+          name: "Postman",
+          className: "logos:postman-icon",
         },
         {
-          skillName: "Vercel",
-          fontAwesomeClassname: "logos:vercel-icon",
+          id: "Vercel",
+          name: "Vercel",
+          className: "logos:vercel-icon",
         },
       ],
     },
@@ -160,7 +177,7 @@ export const educationInfo = [
     subHeader: "Bachelor of Science (Computer Science)",
     duration: "2016-2021",
     // grade: "3.8 GPA",
-    desc: "My Bachelor's degree in Computer Science from Gujrat Institute of Management Sciences provided me with a strong foundation in software development and system management. Throughout the program, I gained expertise in front-end and back-end technologies and developed the skills to create secure and efficient client/server solutions. This education not only enhanced my technical proficiency but also cultivated problem-solving abilities, critical thinking, and attention to detail. These skills have proven invaluable in my career, enabling me to contribute effectively to technology-driven projects and adapt to evolving technological landscapes.",
+    desc: "Bachelor's degree in Computer Science with focus on software development principles and modern programming practices. Developed a React Native mobile application with Firebase integration for real-time location sharing and messaging as final year project.",
     descBullets: [],
   },
 ];
@@ -171,7 +188,7 @@ export const experience = [
     role: "Software Engineer",
     companylogo: "/img/icons/common/dabeeb.jpeg",
     date: "May 2022 - Present",
-    desc: "I'm working as Software Engineer at Dabeeb, a Saudi company that offers scooter and bicycle rental services, I am responsible for the development and maintenance of the app using Typescript, React,React Node, Express, PostgreSQL, and Hasura.",
+    desc: "I'm working as Software Engineer at Dabeeb, a Saudi company that offers scooter and bicycle rental services, I am responsible for the development and maintenance of the app using TypeScript, React Native, Node.js, Express.js, PostgreSQL, and Hasura.",
     // descBullets: [],
   },
   {
@@ -179,14 +196,14 @@ export const experience = [
     role: "Junior Software Engineer",
     companylogo: "/img/icons/common/gigalabs.jpeg",
     date: "Feb 2021 – Mar 2022",
-    desc: "At Gigalabs, I worked as a Junior Software Engineer where I am responsible for developing and maintaining various client applications. My proficiency in Javascript, React, Node, Express, MongoDB, and PostgreSQL enables me to meet the diverse needs of our clients.",
+    desc: "At Gigalabs, I worked as a Junior Software Engineer where I am responsible for developing and maintaining various client applications. My proficiency in JavaScript, React, Node.js, Express.js, MongoDB, and PostgreSQL enables me to meet the diverse needs of our clients.",
   },
 ];
 
 export const projects = [
   {
     name: "Dabeeb",
-    desc: "Dabeeb provides scooter and bicycle rental services that allow users to access transportation anytime, anywhere. Users can book, unlock, and pay for their rides using a mobile app. Dabeeb aims to make urban mobility more accessible, affordable, and sustainable.",
+    desc: "Developed a comprehensive mobile application using React Native, Express.js, and Hasura for scooter and bicycle rentals. Implemented robust user authentication, real-time availability tracking, and integrated secure payment processing.",
     links: [
       {
         icon: "bxl:play-store",
@@ -200,7 +217,7 @@ export const projects = [
   },
   {
     name: "linesheets",
-    desc: "Linesheets is an online platform that enables users to create and share their own product collections with ease. Users can customize their collections with images, descriptions, prices, and other details. Users can also export their collections as PDFs or share them online with buyers and retailers.",
+    desc: "Contributed to the development of an online platform for customizing and sharing product collections. Implemented key features using React for the frontend and Express.js for the backend, enhancing user experience and platform functionality.",
     links: [
       {
         icon: "mdi:internet",
@@ -210,7 +227,7 @@ export const projects = [
   },
   {
     name: "New York Adventure Club",
-    desc: "NYAC is a tour company that takes you beyond the tourist traps and shows you the hidden gems of New York City. You’ll discover the city’s best-kept secrets, from speakeasies and street art to rooftop gardens and underground tunnels. NYAC’s guides are locals who know the city inside out and will share stories and insights that you won’t find in any guidebook.",
+    desc: "Worked on a tour company platform providing insider access to city secrets. Developed both frontend and backend components using React and Express.js, focusing on improving tour booking and management systems.",
     links: [
       {
         icon: "mdi:internet",
@@ -220,7 +237,7 @@ export const projects = [
   },
   {
     name: "bookit",
-    desc: "Bookit is an online booking system that simplifies the reservation process for both guests and hotels. Guests can make secure online reservations. Hotels can accept bookings and collect payments online with ease. Bookit is powered by Next.js,MongoDB and Stripe, offering a fast and reliable service.",
+    desc: "Created an online reservation system using Next.js, Stripe, and MongoDB to streamline the booking process for hospitality businesses. Implemented real-time availability updates, user account management, and integrated payment gateway for seamless transactions.",
     links: [
       {
         icon: "mdi:internet",
@@ -234,7 +251,7 @@ export const projects = [
   },
   {
     name: "Phanox",
-    desc: "Phanox is an e-commerce website that lets you discover and buy your favorite headphones with ease. Built with Next.js and Sanity.",
+    desc: "Developed a full-stack e-commerce platform specializing in headphone sales using Next.js, Sanity, and Stripe.Implemented features including product cataloging, user authentication, shopping cart functionality, and secure payment processing.",
     links: [
       {
         icon: "mdi:internet",
@@ -248,7 +265,7 @@ export const projects = [
   },
   {
     name: "Pixel Muse",
-    desc: "Pixel Muse is a suite of bots that create and share random color pixel images on Twitter and Telegram platforms. You can enjoy these beautiful images every day by following the bots on social media or requesting them via messages or mentions.",
+    desc: "Developed a suite of automated bots using Next.js and Node.js for generating and distributing random color pixel images across Twitter and Telegram platforms. Implemented image generation algorithms and social media API integrations.",
     links: [
       {
         icon: "mdi:internet",
@@ -273,73 +290,48 @@ export const feedbacks = [
 
 export const seoData = {
   name: "Sami Warraich",
-  jobTitle: "Full-Stack Software Engineer",
+  jobTitle: "Full Stack Developer",
   author: "Sami Warraich",
   description:
-    "Full-stack developer with expertise in JavaScript, React, and Node.js ecosystems. Specializing in building responsive web applications and cross-platform mobile solutions. Passionate about creating scalable, efficient, and user-friendly software that solves real-world problems and enhances business performance.",
+    "Full Stack Developer with 3+ years of experience in building web and mobile applications. Specialized in React, React Native, and Node.js. Proven track record of delivering efficient and scalable solutions across diverse projects. Committed to continuous learning and innovation in software development.",
   image:
     "https://avatars.githubusercontent.com/u/55091638?s=400&u=c67569833bfa4617eaa179e4d3512cb0800d2a88&v=4",
   url: "https://sami.warraich.co",
   keywords: [
-    // Core skills and technologies
-    "Full-Stack Developer",
+    // Core skills
+    "Full Stack Developer",
     "Software Engineer",
-    "React.js Developer",
-    "Node.js Developer",
-    "JavaScript Expert",
-    "TypeScript Developer",
-    "Next.js Specialist",
-    "Express.js",
+    "React Developer",
     "React Native Developer",
+    "Node.js Developer",
+    "JavaScript Developer",
+    "TypeScript Developer",
+    "Next.js Developer",
+    "Express.js Developer",
 
-    // Personal branding
-    "Sami Warraich",
-    "samiwarraich",
-    "Sami Warraich portfolio",
-
-    // Job-related terms
-    "Web Developer",
-    "Mobile App Developer",
-    "Frontend Developer",
-    "Backend Developer",
-    "Full Stack Engineer",
-
-    // Location-specific
-    "Web Developer Riyadh",
-    "Software Engineer Saudi Arabia",
-
-    // Industry terms
-    "RESTful API Development",
-    "Database Management",
-    "Cloud Computing",
-    "Agile Development",
-    "UI/UX Integration",
-
-    // Soft skills and attributes
-    "Problem Solver",
-    "Tech Innovator",
-    "Open to Work",
-
-    // Projects (generic terms)
-    "Web Application Development",
-    "Mobile App Projects",
-    "E-commerce Solutions",
-    "Data Visualization",
-
-    // Education (if relevant)
-    "Computer Science Graduate",
-    "Software Engineering Degree",
-  ],
-  twitter: { site: "@samiwarra1ch", creator: "@samiwarra1ch" },
-  skills: [
-    "React.js",
-    "Next.js",
+    // Technologies
+    "React",
+    "React Native",
     "Node.js",
     "Express.js",
-    "React Native",
-    "JavaScript",
+    "Next.js",
     "TypeScript",
+    "JavaScript",
+    "GraphQL",
+    "PostgreSQL",
+    "MongoDB",
+    "Hasura",
+
+    // Personal branding
+    "Sami Ullah Warraich",
+    "samiwarraich",
+
+    // Location
+    "Software Engineer Riyadh",
+    "Developer Saudi Arabia",
   ],
+  twitter: { site: "@samiwarra1ch", creator: "@samiwarra1ch" },
+  skills: ["JavaScript", "React", "React Native", "Node.js"],
   socialLinks: {
     github: "https://github.com/samiwarraich",
     linkedin: "https://linkedin.com/in/samiwarra1ch",

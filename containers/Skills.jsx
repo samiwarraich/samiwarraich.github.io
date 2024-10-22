@@ -28,19 +28,19 @@ const Skills = () => {
                         <Fragment key={i}>
                           <div
                             className="icon icon-lg icon-shape shadow-sm rounded-circle m-1"
-                            id={skill.skillName.replace(/\s/g, "")}
+                            id={skill.id.replace(/\s/g, "")}
                           >
                             <Icon
-                              icon={skill.fontAwesomeClassname}
+                              icon={skill.className}
                               data-inline="false"
                             ></Icon>
                           </div>
                           <UncontrolledTooltip
                             delay={0}
                             placement="bottom"
-                            target={skill.skillName.replace(/\s/g, "")}
+                            target={skill.id.replace(/\s/g, "")}
                           >
-                            {skill.skillName}
+                            {skill.name}
                           </UncontrolledTooltip>
                         </Fragment>
                       );
