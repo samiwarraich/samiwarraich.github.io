@@ -57,6 +57,7 @@ function SEO() {
       {/* Open Graph / Facebook */}
       <meta property="og:site_name" content={name} />
       <meta property="og:title" content={name} />
+      <meta property="og:site_name" content={name} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={url} />

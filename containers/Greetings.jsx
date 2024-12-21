@@ -30,9 +30,10 @@ const Greetings = () => {
             <div className="col px-0">
               <Row>
                 <Col lg="6">
-                  <h1 className="display-3 text-white">
+                  <h1 className="sr-only">{greetings.name}</h1>
+                  <div className="display-3 text-white">
                     {greetings.title + " "}
-                  </h1>
+                  </div>
                   <p className="lead text-white text-justify">
                     {greetings.description}
                   </p>
