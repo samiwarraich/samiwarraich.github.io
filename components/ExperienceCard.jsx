@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Card,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  CardText,
-  Col,
-} from "reactstrap";
+import { Card, CardBody, CardTitle, CardSubtitle, Col } from "reactstrap";
 import Fade from "react-reveal/Fade";
 
 const ExperienceCard = ({ data }) => {
