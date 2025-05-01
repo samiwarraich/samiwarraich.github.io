@@ -1736,10 +1736,10 @@
     gud "^1.0.0"
     warning "^4.0.3"
 
-"@iconify/react@^5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-5.0.1.tgz#d72664c79ef8fe9bf628b171a3d71fdb52299727"
-  integrity sha512-octpAJRtHZLLS1o6fmz2Ek2Rfwx75kVg48MZyGTqL3QqoxRddEsuLqOt6ADDhRosmlrYnIrVL+7obo1bz2ikNw==
+"@iconify/react@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-6.0.0.tgz#8e7ed943792746a0401cc49b9b4e9a5bd5f09b1a"
+  integrity sha512-eqNscABVZS8eCpZLU/L5F5UokMS9mnCf56iS1nM9YYHdH8ZxqZL9zyjSwW60IOQFsXZkilbBiv+1paMXBhSQnw==
   dependencies:
     "@iconify/types" "^2.0.0"
 
