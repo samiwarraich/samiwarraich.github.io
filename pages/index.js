@@ -13,7 +13,7 @@ const GithubProfileCard = dynamic(() =>
 );
 import { openSource } from "../portfolio";
 import SEO from "../components/SEO";
-import Contact from "../components/ContactUs.jsx";
+const Contact = dynamic(() => import("../components/ContactUs.jsx"));
 
 export default function Home({ githubProfileData }) {
   return (
@@ -38,11 +38,36 @@ Home.prototype = {
 };
 
 export async function getStaticProps(_) {
-  const githubProfileData = await fetch(
-    `https://api.github.com/users/${openSource.githubUserName}`
-  ).then((res) => res.json());
-
-  return {
-    props: { githubProfileData },
-  };
+  try {
+    const response = await fetch(
+      `https://api.github.com/users/${openSource.githubUserName}`
+    );
+    
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    
+    const githubProfileData = await response.json();
+    
+    return {
+      props: { githubProfileData },
+    };
+  } catch (error) {
+    console.error('Failed to fetch GitHub profile data:', error);
+    
+    // Return fallback data when API call fails
+    return {
+      props: { 
+        githubProfileData: {
+          login: openSource.githubUserName,
+          name: "Sami Warraich",
+          avatar_url: "",
+          bio: "",
+          public_repos: 0,
+          followers: 0,
+          following: 0
+        }
+      },
+    };
+  }
 }

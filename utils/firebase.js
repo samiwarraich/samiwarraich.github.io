@@ -13,7 +13,7 @@ const firebaseConfig = {
 
 let app;
 let analytics;
-if (typeof window != undefined) {
+if (typeof window !== "undefined") {
   app = initializeApp(firebaseConfig);
   analytics = isSupported().then((yes) => (yes ? getAnalytics(app) : null));
 }

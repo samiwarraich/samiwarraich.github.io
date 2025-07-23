@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import { Button, Container, Row, Col } from "reactstrap";
-import GreetingLottie from "../components/DisplayLottie";
 import SocialLinks from "../components/SocialLinks";
 import { greetings } from "../portfolio";
 import dynamic from "next/dynamic";
+
+const GreetingLottie = dynamic(() => import("../components/DisplayLottie"), {
+  ssr: false,
+});
 
 const ParticleBg = dynamic(() => import("particles-bg"), {
   ssr: false,
@@ -11,8 +14,10 @@ const ParticleBg = dynamic(() => import("particles-bg"), {
 
 const Greetings = () => {
   useEffect(() => {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
+    if (typeof window !== "undefined") {
+      document.documentElement.scrollTop = 0;
+      document.scrollingElement.scrollTop = 0;
+    }
   });
   return (
     <main>
