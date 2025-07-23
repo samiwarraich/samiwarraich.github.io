@@ -13,7 +13,7 @@ const GithubProfileCard = dynamic(() =>
 );
 import { openSource } from "../portfolio";
 import SEO from "../components/SEO";
-import Contact from "../components/ContactUs.jsx";
+const Contact = dynamic(() => import("../components/ContactUs.jsx"));
 
 export default function Home({ githubProfileData }) {
   return (

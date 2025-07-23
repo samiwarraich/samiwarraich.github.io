@@ -1,4 +1,4 @@
-import emoji from "react-easy-emoji";
+
 
 export const greetings = {
   name: "Sami Warraich",
@@ -61,9 +61,7 @@ export const skillsSection = {
       title: "Full Stack Development",
       lottieAnimationFile: "/lottie/webdev.json",
       skills: [
-        emoji(
-          "⚡ Skilled in developing interactive web and mobile applications across various tech stacks."
-        ),
+        "⚡ Skilled in developing interactive web and mobile applications across various tech stacks.",
       ],
       softwareSkills: [
         {
