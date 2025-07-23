@@ -38,11 +38,34 @@ Home.prototype = {
 };
 
 export async function getStaticProps(_) {
-  const githubProfileData = await fetch(
-    `https://api.github.com/users/${openSource.githubUserName}`
-  ).then((res) => res.json());
+  try {
+    const githubProfileData = await fetch(
+      `https://api.github.com/users/${openSource.githubUserName}`
+    ).then((res) => {
+      if (!res.ok) {
+        throw new Error(`GitHub API failed: ${res.status}`);
+      }
+      return res.json();
+    });
 
-  return {
-    props: { githubProfileData },
-  };
+    return {
+      props: { githubProfileData },
+    };
+  } catch (error) {
+    console.error('Error fetching GitHub profile:', error);
+    // Return fallback data if GitHub API fails
+    return {
+      props: { 
+        githubProfileData: {
+          name: openSource.githubUserName,
+          bio: "Full Stack Developer",
+          public_repos: 0,
+          followers: 0,
+          following: 0,
+          avatar_url: "",
+          html_url: `https://github.com/${openSource.githubUserName}`
+        }
+      },
+    };
+  }
 }
