@@ -10,7 +10,9 @@ import "../styles/vendor/nucleo/css/nucleo.css";
 function MyApp({ Component, pageProps }) {
   const MS_CLARITY = process.env.NEXT_PUBLIC_MS_CLARITY;
   useEffect(() => {
-    analytics;
+    if (typeof window !== "undefined") {
+      analytics;
+    }
   }, []);
   return (
     <>

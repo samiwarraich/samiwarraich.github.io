@@ -20,8 +20,13 @@ const Navigation = () => {
   const onExited = () => setCollapseClasses("");
 
   useEffect(() => {
-    let headroom = new Headroom(document.getElementById("navbar-main"));
-    headroom.init();
+    if (typeof window !== "undefined" && document) {
+      const navElement = document.getElementById("navbar-main");
+      if (navElement) {
+        let headroom = new Headroom(navElement);
+        headroom.init();
+      }
+    }
   });
 
   return (

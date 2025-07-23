@@ -38,11 +38,35 @@ Home.prototype = {
 };
 
 export async function getStaticProps(_) {
-  const githubProfileData = await fetch(
-    `https://api.github.com/users/${openSource.githubUserName}`
-  ).then((res) => res.json());
+  try {
+    const githubProfileData = await fetch(
+      `https://api.github.com/users/${openSource.githubUserName}`
+    ).then((res) => {
+      if (!res.ok) {
+        throw new Error(`GitHub API responded with status: ${res.status}`);
+      }
+      return res.json();
+    });
 
-  return {
-    props: { githubProfileData },
-  };
+    return {
+      props: { githubProfileData },
+    };
+  } catch (error) {
+    console.error('Failed to fetch GitHub profile data:', error);
+    // Return a fallback object when the API fails
+    return {
+      props: { 
+        githubProfileData: {
+          login: openSource.githubUserName,
+          name: "Sami Warraich",
+          bio: "Full Stack Developer",
+          avatar_url: "https://avatars.githubusercontent.com/u/55091638?s=400&u=c67569833bfa4617eaa179e4d3512cb0800d2a88&v=4",
+          html_url: `https://github.com/${openSource.githubUserName}`,
+          public_repos: 0,
+          followers: 0,
+          following: 0
+        }
+      },
+    };
+  }
 }
