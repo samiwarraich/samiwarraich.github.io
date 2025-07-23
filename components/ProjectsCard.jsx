@@ -1,12 +1,12 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import { Card, CardBody, Col, Button } from "reactstrap";
-import Fade from "react-reveal/Fade";
+import SafeFade from "./SafeFade";
 
 const ProjectsCard = ({ data }) => {
   return (
     <Col lg="6">
-      <Fade bottom duration={2000}>
+      <SafeFade bottom duration={2000}>
         <Card className="shadow-lg--hover shadow mt-4">
           <CardBody>
             <div className="d-flex px-3">
@@ -30,7 +30,7 @@ const ProjectsCard = ({ data }) => {
             </div>
           </CardBody>
         </Card>
-      </Fade>
+      </SafeFade>
     </Col>
   );
 };

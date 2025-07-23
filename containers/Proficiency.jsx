@@ -1,14 +1,14 @@
 import React from "react";
 import { SkillBars } from "../portfolio";
 import { Container, Row, Progress, Col } from "reactstrap";
-import Fade from "react-reveal/Fade";
+import SafeFade from "../components/SafeFade";
 import GreetingLottie from "../components/DisplayLottie";
 
 const Proficiency = () => {
   return (
     SkillBars && (
       <Container className="section section-lg">
-        <Fade bottom duration={2000}>
+        <SafeFade bottom duration={2000}>
           <Row>
             <Col lg="6">
               <h2 className="h1">Proficiency</h2>
@@ -36,7 +36,7 @@ const Proficiency = () => {
               <GreetingLottie animationPath="/lottie/build.json" />
             </Col>
           </Row>
-        </Fade>
+        </SafeFade>
       </Container>
     )
   );

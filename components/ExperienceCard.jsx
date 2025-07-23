@@ -1,11 +1,11 @@
 import React from "react";
 import { Card, CardBody, CardTitle, CardSubtitle, Col } from "reactstrap";
-import Fade from "react-reveal/Fade";
+import SafeFade from "./SafeFade";
 
 const ExperienceCard = ({ data }) => {
   return (
     <Col lg="6">
-      <Fade left duration={2000}>
+      <SafeFade left duration={2000}>
         <Card
           style={{ flex: 1 }}
           className="shadow-lg--hover mb-3 shadow border-0 text-center rounded"
@@ -46,7 +46,7 @@ const ExperienceCard = ({ data }) => {
             </ul>
           </CardBody>
         </Card>
-      </Fade>
+      </SafeFade>
     </Col>
   );
 };
