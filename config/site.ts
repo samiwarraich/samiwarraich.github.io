@@ -13,7 +13,7 @@ export const siteConfig = {
   ],
 
   links: {
-    resume: "/Sami_Ullah_Warraich.pdf",
+    resume: "/resume/",
     github: "https://github.com/samiwarraich",
     linkedin: "https://linkedin.com/in/samiwarra1ch",
     email: "mailto:sami@warraich.co",
